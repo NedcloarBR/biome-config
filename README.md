@@ -6,7 +6,7 @@
 
 **[BiomeJS](https://biomejs.dev/) Configuration used by [NedcloarBR](https://github.com/NedcloarBR) in their projects**
 
-[![GitHub](https://img.shields.io/github/license/NedcloarBR/biome-config)](https://github.com/NedcloarBR/biome-config/blob/main/LICENSE)
+[![GitHub](https://img.shields.io/github/license/NedcloarBR/biome-config)](https://github.com/NedcloarBR/biome-config/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/@nedcloarbr/biome-config?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@nedcloarbr/biome-config)
 
 </div>
