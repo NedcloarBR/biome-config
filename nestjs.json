@@ -61,8 +61,14 @@
 				"noNonNullAssertion": "off",
 				"useAsConstAssertion": "warn",
 				"useConst": "error",
-				"useExportType": "info",
-				"useImportType": "info",
+				"useExportType": {
+          "level":"info",
+          "fix": "none"
+        },
+				"useImportType": {
+          "level":"info",
+          "fix": "none"
+        },
 				"useShorthandArrayType": "error",
 				"useSingleVarDeclarator": "error"
 			},
