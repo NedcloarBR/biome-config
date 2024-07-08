@@ -1,0 +1,12 @@
+node_modules/
+.yarn/
+.vscode/
+.github/
+.editorconfig
+.release-it.json
+.npmignore
+.gitattributes
+.gitignore
+.pnp.cjs
+.yarnrc.yml
+yarn.lock
