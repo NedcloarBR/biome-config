@@ -30,12 +30,20 @@ You can use the following command to install this package.
 
 ```sh
 npm install --save-dev --save-exact @biomejs/biome @nedcloarbr/biome-config
-
 yarn add --dev --exact @biomejs/biome @nedcloarbr/biome-config
-
 pnpm install --save-dev --save-exact @biomejs/biome @nedcloarbr/biome-config
-
 bun add --dev --exact @biomejs/biome @nedcloarbr/biome-config
+```
+
+> [!WARNING]
+> At the moment BiomeJS doesn't support Yarn PnP completely \
+> Discussion for add this support: https://github.com/biomejs/biome/discussions/3393 \
+> If you're using Yarn Classic (v1.x) you don't have to worry about this \
+> To opt out of using PnP in Yarn Modern (^v2.x), do the following
+
+```yml
+# .yarnrc.yml
+nodeLinker: node-modules
 ```
 
 ## Usage
