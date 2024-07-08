@@ -8,9 +8,9 @@ body = """
 	# [{{ version | trim_start_matches(pat="v") }}]\
 	{% if previous %}\
 		{% if previous.version %}\
-			(https://github.com/necordjs/necord/compare/{{ previous.version }}...{{ version }})\
+			(https://github.com/NedcloarBR/biome-config/compare/{{ previous.version }}...{{ version }})\
 		{% else %}
-			(https://github.com/necordjs/necord/tree/{{ version }})\
+			(https://github.com/NedcloarBR/biome-config/tree/{{ version }})\
 		{% endif %}\
 	{% endif %} \
 	- ({{ timestamp | date(format="%Y-%m-%d") }})
@@ -23,7 +23,7 @@ body = """
 		- {% if commit.scope %}\
 			**{{commit.scope}}:** \
 		  {% endif %}\
-			{{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/necordjs/necord/commit/{{ commit.id }}))\
+			{{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/NedcloarBR/biome-config/commit/{{ commit.id }}))\
 		{% if commit.breaking %}\
 			{% for breakingChange in commit.footers %}\
 				\n{% raw %}  {% endraw %}- **{{ breakingChange.token }}{{ breakingChange.separator }}** {{ breakingChange.value }}\
