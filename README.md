@@ -41,20 +41,19 @@ bun add --dev --exact @biomejs/biome @nedcloarbr/biome-config
 > If you're using Yarn Classic (v1.x) you don't have to worry about this \
 > To opt out of using PnP in Yarn Modern (^v2.x), do the following
 
-```yml
+```diff
 # .yarnrc.yml
-nodeLinker: node-modules
++ nodeLinker: node-modules
 ```
 
 ## Usage
 
 ### [`NestJS`](https://nestjs.com/)
 
-```jsonc
+```diff
 // biome.json
 {
-  "extends": ["@nedcloarbr/biome-config/nestjs"]
-  // ...
+  + "extends": ["@nedcloarbr/biome-config/nestjs"]
 }
 ```
 
