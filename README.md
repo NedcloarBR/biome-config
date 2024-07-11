@@ -53,7 +53,7 @@ bun add --dev --exact @biomejs/biome @nedcloarbr/biome-config
 ```diff
 // biome.json
 {
-  + "extends": ["@nedcloarbr/biome-config/nestjs"]
++  "extends": ["@nedcloarbr/biome-config/nestjs"]
 }
 ```
 
