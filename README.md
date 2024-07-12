@@ -67,10 +67,14 @@ bun add --dev --exact @biomejs/biome @nedcloarbr/biome-config
 
 Add support for other types of projects
 
-- [ ] ReactJS
-  - [ ] Vanilla
-  - [ ] Vite
-  - [ ] NextJS
-- [ ] NodeJS
-  - [ ] Vanilla
-  - [ ] TypeScript
+- Configs
+  - [ ] ReactJS
+    - [ ] Vanilla
+    - [ ] Vite
+    - [ ] NextJS
+  - [ ] NodeJS
+    - [ ] Vanilla
+    - [ ] TypeScript
+
+- Repository
+  - [ ] Fix cliff for generate changelogs correctly
