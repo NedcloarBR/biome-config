@@ -1,6 +1,6 @@
 {
 	"name": "@nedcloarbr/biome-config",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "BiomeJS Configuration used by NedcloarBR in their projects",
 	"license": "MIT",
 	"publishConfig": {
@@ -20,12 +20,20 @@
 		"url": "https://github.com/NedcloarBR/biome-config/issues"
 	},
 	"homepage": "https://github.com/NedcloarBR/biome-config#readme",
-	"keywords": ["BiomeJS", "NestJS", "linter", "formatter"],
+	"keywords": [
+		"BiomeJS",
+		"NestJS",
+		"linter",
+		"formatter"
+	],
 	"exports": {
 		"./nestjs": "./nestjs.json",
 		"./ignore": "./ignore.json"
 	},
-	"files": ["nestjs.json", "ignore.json"],
+	"files": [
+		"nestjs.json",
+		"ignore.json"
+	],
 	"packageManager": "yarn@4.3.1",
 	"scripts": {
 		"release": "release-it",
