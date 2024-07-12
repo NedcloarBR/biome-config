@@ -55,6 +55,14 @@ bun add --dev --exact @biomejs/biome @nedcloarbr/biome-config
 +  "extends": ["@nedcloarbr/biome-config/nestjs"]
 ```
 
+### `Ignore` (an array of commonly ignored folders)
+
+```diff
+# biome.json
++  "extends": ["@nedcloarbr/biome-config/ignore"]
+```
+
+
 ## To-Do
 
 Add support for other types of projects
