@@ -22,7 +22,11 @@
 
 Configuring a linter and formatter, such as `BiomeJS`, is crucial for maintaining consistent, readable, and error-free code. Linters ensure uniform coding standards and early error detection, saving debugging time. Formatters automate code structuring, enhancing readability and maintenance. These tools increase productivity by allowing developers to focus on critical tasks. They also enforce quality standards, creating a professional development environment. In CI/CD workflows, they ensure code adherence to quality standards, preserving codebase integrity.
 
-The package includes configuration for [`NestJS`](https://nestjs.com/)
+The package includes configuration for:
+- [`NestJS`](https://nestjs.com/)
+- [`React`](https://react.dev/)
+  - [`Vite`](https://vitejs.dev/)
+  - [`NextJS`](https://nextjs.org/)
 
 ## Installation
 
@@ -71,6 +75,27 @@ This config includes base config
 +  "extends": ["@nedcloarbr/biome-config/nestjs"]
 ```
 
+### [`React`](https://react.dev/)
+This config includes base config
+
+```diff
+# biome.json
++  "extends": ["@nedcloarbr/biome-config/react"]
+```
+
+If you're in a [`Vite`](https://vitejs.dev/) Project \
+Install this [Vite Plugin](https://github.com/skrulling/vite-plugin-biome) and follow the configuration guide
+
+If you're in a [`NextJS`](https://nextjs.org/) Project \
+You will need to disable eslint checking since NextJS doesn't [support Biome](https://github.com/vercel/next.js/pull/67280) natively yet
+
+``` diff
+# next.config.js
++  eslint: {
++    ignoreDuringBuilds: true,
++  }
+```
+
 ### `Ignore` (an array of commonly ignored folders) 
 
 This config don't includes base config
@@ -86,10 +111,10 @@ This config don't includes base config
 Add support for other types of projects
 
 - Configs
-  - [ ] ReactJS
-    - [ ] Vanilla
-    - [ ] Vite
-    - [ ] NextJS
+  - [x] ReactJS
+    - [x] Vanilla
+    - [x] Vite
+    - [x] NextJS
   - [x] NodeJS
     - [x] Vanilla
     - [x] TypeScript

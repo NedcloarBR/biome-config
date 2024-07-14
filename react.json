@@ -1,0 +1,30 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"extends": ["./base.json"],
+	"javascript": {
+		"jsxRuntime": "transparent"
+	},
+	"linter": {
+		"rules": {
+			"a11y": {
+				"all": true
+			},
+			"nursery": {
+				"noUnknownFunction": "error",
+				"noUnknownUnit": "error",
+				"useSortedClasses": "error"
+			},
+			"security": {
+				"noDangerouslySetInnerHtml": "error",
+				"noDangerouslySetInnerHtmlWithChildren": "error"
+			},
+			"style": {
+				"noImplicitBoolean": "error",
+				"useFragmentSyntax": "error"
+			},
+			"suspicious": {
+				"noSuspiciousSemicolonInJsx": "error"
+			}
+		}
+	}
+}
