@@ -1,0 +1,77 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 2,
+		"indentStyle": "tab",
+		"lineEnding": "lf",
+		"lineWidth": 120
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"semicolons": "always",
+			"quoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"trailingComma": "all"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"complexity": {
+				"noEmptyTypeParameters": "error",
+				"noExcessiveCognitiveComplexity": "error",
+				"noForEach": "error",
+				"noUselessCatch": "error",
+				"noUselessConstructor": "error",
+				"noUselessEmptyExport": "error",
+				"noUselessSwitchCase": "error",
+				"noVoid": "off",
+				"useArrowFunction": "error",
+				"useLiteralKeys": "off",
+				"useOptionalChain": "error",
+				"useRegexLiterals": "error",
+				"useSimplifiedLogicExpression": "error"
+			},
+			"correctness": {
+				"noConstAssign": "error",
+				"noConstantCondition": "error",
+				"noEmptyCharacterClassInRegex": "error",
+				"noEmptyPattern": "error",
+				"noGlobalObjectCalls": "error",
+				"noInnerDeclarations": "off",
+				"noInvalidConstructorSuper": "error",
+				"noInvalidNewBuiltin": "error",
+				"noSwitchDeclarations": "off"
+			},
+			"nursery": {
+				"noDuplicateJsonKeys": "error"
+			},
+			"style": {
+				"noDefaultExport": "error",
+				"noVar": "error",
+				"noUselessElse": "error",
+				"noNonNullAssertion": "off",
+				"useAsConstAssertion": "warn",
+				"useConst": "error",
+				"useShorthandArrayType": "error",
+				"useSingleVarDeclarator": "error"
+			},
+			"suspicious": {
+				"noApproximativeNumericConstant": "error",
+				"noCatchAssign": "error",
+				"noConfusingVoidType": "error",
+				"noDoubleEquals": "error",
+				"noDuplicateCase": "error",
+				"noDuplicateParameters": "error",
+				"noEmptyBlockStatements": "error",
+				"noEmptyInterface": "error",
+				"noExplicitAny": "error"
+			}
+		}
+	}
+}

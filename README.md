@@ -48,14 +48,32 @@ bun add --dev --exact @biomejs/biome @nedcloarbr/biome-config
 
 ## Usage
 
+### `NodeJS`
+
+```diff
+# biome.json
++ extends: ["@nedcloabr/biome-config]
+```
+
+or
+
+```diff
+# biome.json
++ extends: ["@nedcloabr/biome-config/base]
+```
+
 ### [`NestJS`](https://nestjs.com/)
+
+This config includes base config
 
 ```diff
 # biome.json
 +  "extends": ["@nedcloarbr/biome-config/nestjs"]
 ```
 
-### `Ignore` (an array of commonly ignored folders)
+### `Ignore` (an array of commonly ignored folders) 
+
+This config don't includes base config
 
 ```diff
 # biome.json
@@ -72,9 +90,9 @@ Add support for other types of projects
     - [ ] Vanilla
     - [ ] Vite
     - [ ] NextJS
-  - [ ] NodeJS
-    - [ ] Vanilla
-    - [ ] TypeScript
+  - [x] NodeJS
+    - [x] Vanilla
+    - [x] TypeScript
 
 - Repository
   - [ ] Fix cliff for generate changelogs correctly
