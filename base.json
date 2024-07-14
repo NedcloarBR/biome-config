@@ -58,6 +58,7 @@
 				"noNonNullAssertion": "off",
 				"useAsConstAssertion": "warn",
 				"useConst": "error",
+				"useNodejsImportProtocol": "error",
 				"useShorthandArrayType": "error",
 				"useSingleVarDeclarator": "error"
 			},
