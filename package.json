@@ -1,50 +1,50 @@
 {
-	"name": "@nedcloarbr/biome-config",
-	"version": "1.4.0",
-	"description": "BiomeJS Configuration used by NedcloarBR in their projects",
-	"license": "MIT",
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org",
-		"access": "public"
-	},
-	"author": {
-		"name": "Miguel Alexandre Uhlein <NedcloarBR>",
-		"email": "nedcloar1@hotmail.com",
-		"url": "https://github.com/NedcloarBR"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/NedcloarBR/biome-config.git"
-	},
-	"bugs": {
-		"url": "https://github.com/NedcloarBR/biome-config/issues"
-	},
-	"homepage": "https://github.com/NedcloarBR/biome-config#readme",
-	"keywords": [
-		"BiomeJS",
-		"NestJS",
-		"linter",
-		"formatter"
-	],
-	"exports": {
-		".": "./base.json",
-		"./base": "./base.json",
-		"./nestjs": "./nestjs.json",
-		"./react": "./react.json",
-		"./ignore": "./ignore.json"
-	},
-	"files": [
-		"base.json",
-		"nestjs.json",
-		"react.json",
-		"ignore.json"
-	],
-	"packageManager": "yarn@4.3.1",
-	"scripts": {
-		"release": "release-it",
-		"changelog": "git cliff --prepend ./CHANGELOG.md -l --current -c ./cliff.toml -r ."
-	},
-	"devDependencies": {
-		"release-it": "^17.6.0"
-	}
+  "name": "@nedcloarbr/biome-config",
+  "version": "1.5.0",
+  "description": "BiomeJS Configuration used by NedcloarBR in their projects",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "author": {
+    "name": "Miguel Alexandre Uhlein <NedcloarBR>",
+    "email": "nedcloar1@hotmail.com",
+    "url": "https://github.com/NedcloarBR"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NedcloarBR/biome-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NedcloarBR/biome-config/issues"
+  },
+  "homepage": "https://github.com/NedcloarBR/biome-config#readme",
+  "keywords": [
+    "BiomeJS",
+    "NestJS",
+    "linter",
+    "formatter"
+  ],
+  "exports": {
+    ".": "./base.json",
+    "./base": "./base.json",
+    "./nestjs": "./nestjs.json",
+    "./react": "./react.json",
+    "./ignore": "./ignore.json"
+  },
+  "files": [
+    "base.json",
+    "nestjs.json",
+    "react.json",
+    "ignore.json"
+  ],
+  "packageManager": "yarn@4.3.1",
+  "scripts": {
+    "release": "release-it",
+    "changelog": "git cliff --prepend ./CHANGELOG.md -l --current -c ./cliff.toml -r ."
+  },
+  "devDependencies": {
+    "release-it": "^17.6.0"
+  }
 }
