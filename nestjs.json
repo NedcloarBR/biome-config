@@ -1,23 +1,25 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-	"extends": ["./base.json"],
-	"javascript": {
-		"parser": {
-			"unsafeParameterDecoratorsEnabled": true
-		}
-	},
-	"linter": {
-		"rules": {
-			"style": {
-				"useExportType": {
-					"level": "info",
-					"fix": "none"
-				},
-				"useImportType": {
-					"level": "info",
-					"fix": "none"
-				}
-			}
-		}
-	}
+  "$schema": "https://biomejs.dev/schemas/1.9.0/schema.json",
+  "extends": [
+    "./base.json"
+  ],
+  "javascript": {
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "useExportType": {
+          "level": "info",
+          "fix": "none"
+        },
+        "useImportType": {
+          "level": "info",
+          "fix": "none"
+        }
+      }
+    }
+  }
 }

@@ -56,14 +56,14 @@ bun add --dev --exact @biomejs/biome @nedcloarbr/biome-config
 
 ```diff
 # biome.json
-+ extends: ["@nedcloabr/biome-config]
++ extends: ["@nedcloabr/biome-config"]
 ```
 
 or
 
 ```diff
 # biome.json
-+ extends: ["@nedcloabr/biome-config/base]
++ extends: ["@nedcloabr/biome-config/base"]
 ```
 
 ### [`NestJS`](https://nestjs.com/)
