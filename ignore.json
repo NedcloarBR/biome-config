@@ -5,7 +5,10 @@
       "dist/*",
       "out/*",
       "build/*",
-      "coverage/*"
+      "coverage/*",
+      ".vscode/*",
+      ".idea/*",
+      ".atom/*"
     ],
     "ignoreUnknown": true
   }
