@@ -16,7 +16,8 @@
       "semicolons": "always",
       "quoteStyle": "double",
       "quoteProperties": "asNeeded",
-      "trailingCommas": "all"
+      "trailingCommas": "all",
+      "lineWidth": 120
     }
   },
   "json": {
