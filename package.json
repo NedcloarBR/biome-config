@@ -39,7 +39,7 @@
     "react.json",
     "ignore.json"
   ],
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "yarn@4.6.0",
   "scripts": {
     "release": "release-it",
     "changelog": "git cliff --prepend ./CHANGELOG.md -l --current -c ./cliff.toml -r ."
