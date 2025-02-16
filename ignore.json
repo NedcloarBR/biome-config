@@ -9,7 +9,8 @@
       ".vscode/*",
       ".idea/*",
       ".atom/*",
-      ".yarn/*"
+      ".yarn/*",
+      ".next/*"
     ],
     "ignoreUnknown": true
   }
