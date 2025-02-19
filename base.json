@@ -17,7 +17,13 @@
       "quoteStyle": "double",
       "quoteProperties": "asNeeded",
       "trailingCommas": "all",
-      "lineWidth": 120
+      "trailingComma": "all",
+      "arrowParentheses": "always",
+      "lineWidth": 120,
+      "bracketSameLine": true,
+      "bracketSpacing": true,
+      "indentStyle": "tab",
+      "lineEnding": "lf"
     }
   },
   "json": {
@@ -26,7 +32,8 @@
       "indentWidth": 2,
       "indentStyle": "tab",
       "lineEnding": "lf",
-      "lineWidth": 120
+      "lineWidth": 120,
+      "trailingCommas": "all"
     }
   },
   "linter": {
