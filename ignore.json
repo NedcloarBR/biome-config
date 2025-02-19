@@ -10,7 +10,8 @@
       ".idea/*",
       ".atom/*",
       ".yarn/*",
-      ".next/*"
+      ".next/*",
+      "*.pnp.*"
     ],
     "ignoreUnknown": true
   }
