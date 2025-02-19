@@ -7,19 +7,5 @@
     "parser": {
       "unsafeParameterDecoratorsEnabled": true
     }
-  },
-  "linter": {
-    "rules": {
-      "style": {
-        "useExportType": {
-          "level": "info",
-          "fix": "none"
-        },
-        "useImportType": {
-          "level": "info",
-          "fix": "none"
-        }
-      }
-    }
   }
 }

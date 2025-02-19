@@ -67,7 +67,15 @@
         "useConst": "error",
         "useNodejsImportProtocol": "error",
         "useShorthandArrayType": "error",
-        "useSingleVarDeclarator": "error"
+        "useSingleVarDeclarator": "error",
+        "useExportType": {
+          "level": "info",
+          "fix": "none"
+        },
+        "useImportType": {
+          "level": "info",
+          "fix": "none"
+        }
       },
       "suspicious": {
         "noApproximativeNumericConstant": "error",
