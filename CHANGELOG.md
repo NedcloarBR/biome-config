@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+# [1.9.0](https://github.com/NedcloarBR/biome-config/compare/v1.8.0...v1.9.0) - (2025-02-19)
+
+## Features
+
+- Add css quote style ([4e31a69](https://github.com/NedcloarBR/biome-config/commit/4e31a699a9512a196037201f02dcb249120bc9e9))
+- Update base ([bc39ad1](https://github.com/NedcloarBR/biome-config/commit/bc39ad111c6756ea8b319cee84f619e4a059f9e8))
+- Move use import and export type from nestjs to base ([5608a70](https://github.com/NedcloarBR/biome-config/commit/5608a708e830c528da81494659780c0d930e08ee))
+- Ignore yarn pnp files ([efc64b1](https://github.com/NedcloarBR/biome-config/commit/efc64b12967cb5e11c773b1079e825bb2dddcbb0))
+
 # [1.8.0](https://github.com/NedcloarBR/biome-config/compare/v1.7.1...v1.8.0) - (2025-02-16)
 
 ## Features
