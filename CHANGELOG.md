@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+# [1.9.1](https://github.com/NedcloarBR/biome-config/compare/v1.9.0...v1.9.1) - (2025-03-27)
+
+## Features
+
+- Remove trailing commas ([5ef652e](https://github.com/NedcloarBR/biome-config/commit/5ef652e86f39e2365774cb72849b89131f70ea0b))
+
 # [1.9.0](https://github.com/NedcloarBR/biome-config/compare/v1.8.0...v1.9.0) - (2025-02-19)
 
 ## Features
