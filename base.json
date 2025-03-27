@@ -16,8 +16,7 @@
       "semicolons": "always",
       "quoteStyle": "double",
       "quoteProperties": "asNeeded",
-      "trailingCommas": "all",
-      "trailingComma": "all",
+      "trailingCommas": "none",
       "arrowParentheses": "always",
       "lineWidth": 120,
       "bracketSameLine": true,
@@ -33,7 +32,7 @@
       "indentStyle": "tab",
       "lineEnding": "lf",
       "lineWidth": 120,
-      "trailingCommas": "all"
+      "trailingCommas": "none"
     }
   },
   "linter": {
