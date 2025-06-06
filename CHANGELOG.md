@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+# [1.9.2](https://github.com/NedcloarBR/biome-config/compare/v1.9.1...v1.9.2) - (2025-06-06)
+
+## Features
+
+- Ignore .nx folder ([da4bf67](https://github.com/NedcloarBR/biome-config/commit/da4bf673b045dd0423699d61e1431d346e696b89))
+
 # [1.9.1](https://github.com/NedcloarBR/biome-config/compare/v1.9.0...v1.9.1) - (2025-03-27)
 
 ## Features
