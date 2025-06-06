@@ -11,7 +11,8 @@
       ".atom/*",
       ".yarn/*",
       ".next/*",
-      "*.pnp.*"
+      "*.pnp.*",
+      ".nx/"
     ],
     "ignoreUnknown": true
   }
