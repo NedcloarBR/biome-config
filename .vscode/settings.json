@@ -1,13 +1,8 @@
 {
   "editor.defaultFormatter": "biomejs.biome",
-  "cSpell.words": [
-    "Approximative",
-    "biomejs",
-    "nedcloabr",
-    "nestjs",
-    "Uhlein"
-],
-"[json]": {
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-}
+  }
 }
