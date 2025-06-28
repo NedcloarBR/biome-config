@@ -45,6 +45,6 @@
     "changelog": "git cliff --prepend ./CHANGELOG.md -l --current -c ./cliff.toml -r ."
   },
   "devDependencies": {
-    "release-it": "^17.6.0"
+    "release-it": "^19.0.3"
   }
 }
