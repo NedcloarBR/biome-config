@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+# [2.0.0](https://github.com/NedcloarBR/biome-config/compare/v1.9.2...v2.0.0) - (2025-06-28)
+
+## Features
+
+- Migrate `react` to biomejs v2 ([cacc8bf](https://github.com/NedcloarBR/biome-config/commit/cacc8bf57948c7034cd07627c7ea8e535e426cf2))
+- Migrate `nestjs` to biomejs v2 ([20ba5c2](https://github.com/NedcloarBR/biome-config/commit/20ba5c2e4d17334e090514977b6467356e97dc1b))
+- Migrate `ignore` to biomejs v2 ([6683996](https://github.com/NedcloarBR/biome-config/commit/66839960f0a9426bbdfd65a792460f4fb255f40e))
+- Migrate `base` to biomejs v2 ([90e6979](https://github.com/NedcloarBR/biome-config/commit/90e6979ef6e729535125eed61d5f44e3cb43443d))
+
 # [1.9.2](https://github.com/NedcloarBR/biome-config/compare/v1.9.1...v1.9.2) - (2025-06-06)
 
 ## Features
