@@ -1,7 +1,11 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   },
   "formatter": {
     "enabled": true,
@@ -61,18 +65,16 @@
         "noGlobalObjectCalls": "error",
         "noInnerDeclarations": "off",
         "noInvalidConstructorSuper": "error",
-        "noInvalidNewBuiltin": "error",
-        "noSwitchDeclarations": "off"
+        "noSwitchDeclarations": "off",
+        "noInvalidBuiltinInstantiation": "error"
       },
       "style": {
         "noDefaultExport": "error",
-        "noVar": "error",
         "noUselessElse": "error",
         "noNonNullAssertion": "off",
         "useAsConstAssertion": "warn",
         "useConst": "error",
         "useNodejsImportProtocol": "error",
-        "useShorthandArrayType": "error",
         "useSingleVarDeclarator": "error",
         "useExportType": {
           "level": "info",
@@ -80,7 +82,23 @@
         },
         "useImportType": {
           "level": "info",
-          "fix": "none"
+          "fix": "none",
+          "options": {
+            "style": "auto"
+          }
+        },
+        "noParameterAssign": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "useConsistentArrayType": {
+          "level": "error",
+          "options": {
+            "syntax": "shorthand"
+          }
         }
       },
       "suspicious": {
@@ -93,7 +111,8 @@
         "noDuplicateParameters": "error",
         "noEmptyBlockStatements": "error",
         "noEmptyInterface": "error",
-        "noExplicitAny": "error"
+        "noExplicitAny": "error",
+        "noVar": "error"
       }
     }
   }
