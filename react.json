@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
   "extends": [
     "./base.json"
   ],
@@ -18,9 +18,7 @@
   },
   "linter": {
     "rules": {
-      "a11y": {
-        "all": true
-      },
+      "a11y": {},
       "nursery": {
         "useSortedClasses": "error"
       },
@@ -33,8 +31,7 @@
         "noDangerouslySetInnerHtmlWithChildren": "error"
       },
       "style": {
-        "noImplicitBoolean": "error",
-        "useFragmentSyntax": "error"
+        "noImplicitBoolean": "error"
       },
       "suspicious": {
         "noSuspiciousSemicolonInJsx": "error"
