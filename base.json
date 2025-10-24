@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.0/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -82,11 +82,9 @@
           "fix": "none"
         },
         "useImportType": {
+          "options": {},
           "level": "info",
-          "fix": "none",
-          "options": {
-            "style": "auto"
-          }
+          "fix": "none"
         },
         "noParameterAssign": "error",
         "useDefaultParameterLast": "error",

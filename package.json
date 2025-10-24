@@ -3,6 +3,7 @@
   "version": "2.0.1",
   "description": "BiomeJS Configuration used by NedcloarBR in their projects",
   "license": "MIT",
+  "type": "module",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
@@ -28,6 +29,7 @@
   ],
   "exports": {
     ".": "./base.json",
+    "./biome": "./base.json",
     "./base": "./base.json",
     "./nestjs": "./nestjs.json",
     "./react": "./react.json",
