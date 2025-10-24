@@ -1,6 +1,6 @@
 {
   "name": "@nedcloarbr/biome-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "BiomeJS Configuration used by NedcloarBR in their projects",
   "license": "MIT",
   "type": "module",
