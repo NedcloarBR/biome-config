@@ -1,30 +1,22 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.0/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
   "extends": [
-    "./base.json"
+    "./base.json",
+    "./html.json",
+    "./css.json"
   ],
   "javascript": {
     "jsxRuntime": "transparent"
-  },
-  "css": {
-    "formatter": {
-      "enabled": true,
-      "indentWidth": 2,
-      "indentStyle": "tab",
-      "lineEnding": "lf",
-      "lineWidth": 120,
-      "quoteStyle": "double"
-    }
   },
   "linter": {
     "rules": {
       "a11y": {},
       "nursery": {
+        "noComponentHookFactories": "error",
+        "noJsxLeakedDollar": "warn",
+        "noJsxNamespace": "error",
+        "noReactStringRefs": "error",
         "useSortedClasses": "error"
-      },
-      "correctness": {
-        "noUnknownFunction": "error",
-        "noUnknownUnit": "error"
       },
       "security": {
         "noDangerouslySetInnerHtml": "error",
@@ -34,6 +26,7 @@
         "noImplicitBoolean": "error"
       },
       "suspicious": {
+        "noReactForwardRef": "warn",
         "noSuspiciousSemicolonInJsx": "error"
       }
     }

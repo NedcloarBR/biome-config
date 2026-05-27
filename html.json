@@ -1,0 +1,40 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
+  "html": {
+    "formatter": {
+      "enabled": true,
+      "attributePosition": "auto",
+      "bracketSameLine": true,
+      "indentStyle": "tab",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 120,
+      "whitespaceSensitivity": "css"
+    }
+  },
+  "linter": {
+    "rules": {
+      "a11y": {
+        "noAccessKey": "error",
+        "noAutofocus": "error",
+        "noDistractingElements": "error",
+        "noHeaderScope": "error",
+        "noPositiveTabindex": "error",
+        "noRedundantAlt": "error",
+        "noSvgWithoutTitle": "error",
+        "useAltText": "error",
+        "useAnchorContent": "error",
+        "useAriaPropsForRole": "error",
+        "useButtonType": "error",
+        "useHtmlLang": "error",
+        "useIframeTitle": "error",
+        "useMediaCaption": "error",
+        "useValidAriaRole": "error",
+        "useValidLang": "error"
+      },
+      "nursery": {
+        "useIframeSandbox": "error"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.0/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -47,12 +47,20 @@
         "noExcessiveCognitiveComplexity": "error",
         "noForEach": "error",
         "noUselessCatch": "error",
+        "noUselessCatchBinding": "error",
         "noUselessConstructor": "error",
         "noUselessEmptyExport": "error",
         "noUselessSwitchCase": "error",
+        "noUselessUndefined": "error",
         "noVoid": "off",
         "useArrowFunction": "error",
         "useLiteralKeys": "off",
+        "useMaxParams": {
+          "level": "warn",
+          "options": {
+            "max": 4
+          }
+        },
         "useOptionalChain": "error",
         "useRegexLiterals": "error",
         "useSimplifiedLogicExpression": "error"
@@ -64,18 +72,37 @@
         "noEmptyPattern": "error",
         "noGlobalObjectCalls": "error",
         "noInnerDeclarations": "off",
+        "noInvalidBuiltinInstantiation": "error",
         "noInvalidConstructorSuper": "error",
         "noSwitchDeclarations": "off",
-        "noInvalidBuiltinInstantiation": "error"
+        "noUnresolvedImports": "error"
+      },
+      "nursery": {
+        "noImpliedEval": "error",
+        "noLoopFunc": "error",
+        "noUnnecessaryTemplateExpression": "error",
+        "noUselessTypeConversion": "error",
+        "useRegexpTest": "error",
+        "useStringStartsEndsWith": "error"
       },
       "style": {
         "noDefaultExport": "error",
-        "noUselessElse": "error",
+        "noInferrableTypes": "error",
         "noNonNullAssertion": "off",
+        "noParameterAssign": "error",
+        "noUnusedTemplateLiteral": "error",
+        "noUselessElse": "error",
         "useAsConstAssertion": "warn",
         "useConst": "error",
-        "useNodejsImportProtocol": "error",
-        "useSingleVarDeclarator": "error",
+        "useConsistentArrayType": {
+          "level": "error",
+          "options": {
+            "syntax": "shorthand"
+          }
+        },
+        "useConsistentArrowReturn": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
         "useExportType": {
           "options": {},
           "level": "info",
@@ -86,31 +113,27 @@
           "level": "info",
           "fix": "none"
         },
-        "noParameterAssign": "error",
-        "useDefaultParameterLast": "error",
-        "useEnumInitializers": "error",
-        "useSelfClosingElements": "error",
-        "noUnusedTemplateLiteral": "error",
+        "useNodejsImportProtocol": "error",
         "useNumberNamespace": "error",
-        "noInferrableTypes": "error",
-        "useConsistentArrayType": {
-          "level": "error",
-          "options": {
-            "syntax": "shorthand"
-          }
-        }
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error"
       },
       "suspicious": {
         "noApproximativeNumericConstant": "error",
         "noCatchAssign": "error",
         "noConfusingVoidType": "error",
+        "noDeprecatedImports": "warn",
         "noDoubleEquals": "error",
         "noDuplicateCase": "error",
+        "noDuplicateDependencies": "warn",
         "noDuplicateObjectKeys": "error",
         "noDuplicateParameters": "error",
         "noEmptyBlockStatements": "error",
         "noEmptyInterface": "error",
+        "noEmptySource": "error",
         "noExplicitAny": "error",
+        "noImportCycles": "warn",
+        "noUnusedExpressions": "error",
         "noVar": "error"
       }
     }

@@ -1,19 +1,69 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.0/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
   "files": {
     "includes": [
       "**",
-      "!**/dist/**/*",
-      "!**/out/**/*",
-      "!**/build/**/*",
-      "!**/coverage/**/*",
-      "!**/.vscode/**/*",
-      "!**/.idea/**/*",
-      "!**/.atom/**/*",
-      "!**/.yarn/**/*",
-      "!**/.next/**/*",
+
+      "!**/node_modules",
+
+      "!**/dist",
+      "!**/out",
+      "!**/build",
+      "!**/bin",
+      "!**/tmp",
+      "!**/temp",
+
+      "!**/coverage",
+      "!**/.nyc_output",
+
+      "!**/.next",
+      "!**/.nuxt",
+      "!**/.output",
+      "!**/.svelte-kit",
+      "!**/.astro",
+      "!**/.remix",
+      "!**/.solid",
+      "!**/.vinxi",
+      "!**/storybook-static",
+
+      "!**/.turbo",
+      "!**/.cache",
+      "!**/.angular",
+      "!**/.nx",
+      "!**/.parcel-cache",
+      "!**/.rollup.cache",
+      "!**/.wrangler",
+      "!**/.serverless",
+      "!**/.expo",
+
+      "!**/.vscode",
+      "!**/.idea",
+      "!**/.vs",
+      "!**/.fleet",
+      "!**/.atom",
+
+      "!**/.cursor",
+      "!**/.windsurf",
+      "!**/.claude",
+      "!**/.codeium",
+      "!**/.tabnine",
+      "!**/.continue",
+      "!**/.aider",
+      "!**/.supermaven",
+      "!**/.cody",
+
+      "!**/.yarn",
       "!**/*.pnp.*",
-      "!**/.nx/**/*"
+
+      "!**/generated",
+      "!**/__generated__",
+      "!**/*.generated.ts",
+      "!**/*.generated.js",
+      "!**/*.generated.d.ts",
+      "!**/*.min.js",
+      "!**/*.min.css",
+      "!**/.eslintcache",
+      "!**/.stylelintcache"
     ],
     "ignoreUnknown": true
   }
