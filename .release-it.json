@@ -11,7 +11,7 @@
     "releaseName": "v${version}",
     "releaseNotes": "git cliff --tag v${version} --unreleased --strip all -c ./cliff.toml",
     "assets": [
-      "@nedcloarbr/biome-config.*.tgz"
+      "nedcloarbr-biome-config-*.tgz"
     ]
   },
   "npm": {
@@ -19,6 +19,6 @@
   },
   "hooks": {
     "after:bump": "git cliff v${latestVersion}..HEAD --prepend ./CHANGELOG.md --tag v${version} -c ./cliff.toml -r . && git add CHANGELOG.md && rm -f @nedcloarbr/biome-config*.tgz && npm pack",
-    "after:release": "rm -f @nedcloarbr/biome-config*.tgz"
+    "after:release": "rm -f nedcloarbr-biome-config-*.tgz"
   }
 }
