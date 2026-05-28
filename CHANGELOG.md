@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+# [2.1.0](https://github.com/NedcloarBR/biome-config/compare/v2.0.2...v2.1.0) - (2026-05-28)
+
+## Features
+
+- Upgrade to biome v2.4.16 and add new configs ([fa4c67c](https://github.com/NedcloarBR/biome-config/commit/fa4c67c3df4da84aafb47ad7974ed925ea8740b8))
+
 # [2.0.2](https://github.com/NedcloarBR/biome-config/compare/v2.0.1...v2.0.2) - (2025-10-24)
 
 # [2.0.1](https://github.com/NedcloarBR/biome-config/compare/v2.0.0...v2.0.1) - (2025-08-30)
