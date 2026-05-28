@@ -1,12 +1,24 @@
 {
-	"$schema": "https://unpkg.com/release-it@17/schema/release-it.json",
-	"git": {
-		"commitMessage": "chore: release v${version}"
-	},
-	"github": {
-		"release": true
-	},
-	"hooks": {
-		"after:git:release": "yarn changelog"
-	}
+  "$schema": "https://unpkg.com/release-it@19/schema/release-it.json",
+  "git": {
+    "requireBranch": "master",
+    "requireCommits": true,
+    "commitMessage": "chore: release v${version}",
+    "tagName": "v${version}"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "v${version}",
+    "releaseNotes": "git cliff --tag v${version} --unreleased --strip all -c ./cliff.toml",
+    "assets": [
+      "@nedcloarbr/biome-config.*.tgz"
+    ]
+  },
+  "npm": {
+    "publish": true
+  },
+  "hooks": {
+    "after:bump": "git cliff v${latestVersion}..HEAD --prepend ./CHANGELOG.md --tag v${version} -c ./cliff.toml -r . && git add CHANGELOG.md && rm -f @nedcloarbr/biome-config*.tgz && npm pack",
+    "after:release": "rm -f @nedcloarbr/biome-config*.tgz"
+  }
 }

@@ -22,10 +22,22 @@
   },
   "homepage": "https://github.com/NedcloarBR/biome-config#readme",
   "keywords": [
-    "BiomeJS",
-    "NestJS",
+    "biome",
+    "biomejs",
     "linter",
-    "formatter"
+    "formatter",
+    "config",
+    "typescript",
+    "react",
+    "nextjs",
+    "vue",
+    "angular",
+    "react-native",
+    "nestjs",
+    "css",
+    "html",
+    "a11y",
+    "tailwind"
   ],
   "exports": {
     ".": "./base.json",
