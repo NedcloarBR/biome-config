@@ -13,24 +13,20 @@
 
 **Table of Contents**
 
-- [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
-- [To-Do](#to-do)
-
-## Description
-
-Configuring a linter and formatter, such as `BiomeJS`, is crucial for maintaining consistent, readable, and error-free code. Linters ensure uniform coding standards and early error detection, saving debugging time. Formatters automate code structuring, enhancing readability and maintenance. These tools increase productivity by allowing developers to focus on critical tasks. They also enforce quality standards, creating a professional development environment. In CI/CD workflows, they ensure code adherence to quality standards, preserving codebase integrity.
-
-The package includes configuration for:
-- [`NestJS`](https://nestjs.com/)
-- [`React`](https://react.dev/)
-  - [`Vite`](https://vitejs.dev/)
-  - [`NextJS`](https://nextjs.org/)
+- [Configs](#configs)
+  - [base](#base)
+  - [css](#css)
+  - [html](#html)
+  - [nestjs](#nestjs)
+  - [react](#react)
+  - [next](#next)
+  - [vue](#vue)
+  - [angular](#angular)
+  - [react-native](#react-native)
+  - [ignore](#ignore)
 
 ## Installation
-
-You can use the following command to install this package.
 
 ```sh
 npm install --save-dev --save-exact @biomejs/biome @nedcloarbr/biome-config
@@ -40,84 +36,168 @@ bun add --dev --exact @biomejs/biome @nedcloarbr/biome-config
 ```
 
 > [!WARNING]
-> At the moment BiomeJS doesn't support Yarn PnP completely \
-> Discussion for add this support: https://github.com/biomejs/biome/discussions/3393 \
-> If you're using Yarn Classic (v1.x) you don't have to worry about this \
-> To opt out of using PnP in Yarn Modern (^v2.x), do the following
+> BiomeJS doesn't fully support Yarn PnP yet — [discussion](https://github.com/biomejs/biome/discussions/3393).
+> If you're using Yarn Modern (v2+), opt out of PnP:
+> ```yaml
+> # .yarnrc.yml
+> nodeLinker: node-modules
+> ```
 
-```diff
-# .yarnrc.yml
-+ nodeLinker: node-modules
+## Configs
+
+All configs extend `base` unless noted otherwise. The diagram below shows the full inheritance chain:
+
+```
+base
+├── nestjs
+├── css         (CSS formatter + linting + Tailwind support)
+├── html        (HTML formatter + 16 a11y rules)
+└── base + html + css
+    ├── react
+    │   ├── next
+    │   └── react-native
+    ├── vue
+    └── angular
 ```
 
-## Usage
+---
 
-### `NodeJS`
+### `base`
 
-```diff
-# biome.json
-+ extends: ["@nedcloarbr/biome-config"]
+General TypeScript/JavaScript config. Includes formatter, linter rules for correctness, style, complexity and suspicious groups, and import organization.
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/base"]
+}
 ```
 
-or
+---
 
-```diff
-# biome.json
-+ extends: ["@nedcloarbr/biome-config/base"]
+### `css`
+
+CSS formatter and full CSS linting. Includes Tailwind CSS support out of the box — `@tailwind`, `@apply`, `@config`, `theme()` and `screen()` are all recognized.
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/css"]
+}
 ```
 
-### [`NestJS`](https://nestjs.com/)
+---
 
-This config includes base config
+### `html`
 
-```diff
-# biome.json
-+  "extends": ["@nedcloarbr/biome-config/nestjs"]
+HTML formatter and all 16 recommended accessibility rules (`useAltText`, `useButtonType`, `useHtmlLang`, `noAutofocus`, etc.).
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/html"]
+}
 ```
 
-### [`React`](https://react.dev/)
-This config includes base config
+---
 
-```diff
-# biome.json
-+  "extends": ["@nedcloarbr/biome-config/react"]
+### `nestjs`
+
+Extends `base`. Enables TypeScript parameter decorators (`@Injectable`, `@Controller`, etc.) and enforces explicit return types on services and controllers.
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/nestjs"]
+}
 ```
 
-If you're in a [`Vite`](https://vitejs.dev/) Project \
-Install this [Vite Plugin](https://github.com/skrulling/vite-plugin-biome) and follow the configuration guide
+---
 
-If you're in a [`NextJS`](https://nextjs.org/) Project \
-You will need to disable eslint checking since NextJS doesn't [support Biome](https://github.com/vercel/next.js/pull/67280) natively yet
+### `react`
 
-``` diff
-# next.config.js
-+  eslint: {
-+    ignoreDuringBuilds: true,
-+  }
+Extends `base` + `html` + `css`. Adds JSX-specific rules: `useSortedClasses` (Tailwind class sorting), `noReactForwardRef` (React 19), `noDangerouslySetInnerHtml`, a11y rules for JSX, and more.
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/react"]
+}
 ```
 
-### `Ignore` (an array of commonly ignored folders) 
+---
 
-This config don't includes base config
+### `next`
 
-```diff
-# biome.json
-+  "extends": ["@nedcloarbr/biome-config/ignore"]
+Extends `react`. Disables `noDefaultExport` (required for Next.js pages and layouts) and adds `noNextAsyncClientComponent`.
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/next"]
+}
 ```
 
+---
 
-## To-Do
+### `vue`
 
-Add support for other types of projects
+Extends `base` + `html` + `css`. Adds all Vue-specific correctness rules (`noVueReservedProps`, `noVueDuplicateKeys`, `noVueSetupPropsReactivityLoss`, etc.) and nursery rules for Vue directives.
 
-- Configs
-  - [x] ReactJS
-    - [x] Vanilla
-    - [x] Vite
-    - [x] NextJS
-  - [x] NodeJS
-    - [x] Vanilla
-    - [x] TypeScript
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/vue"]
+}
+```
 
-- Repository
-  - [ ] Fix cliff for generate changelogs correctly
+---
+
+### `angular`
+
+Extends `base` + `html` + `css`. Enables TypeScript parameter decorators (`@Component`, `@Injectable`, etc.) and enforces explicit return types.
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/angular"]
+}
+```
+
+---
+
+### `react-native`
+
+Extends `react`. Adds React Native-specific rules: `noReactNativeDeepImports`, `noReactNativeLiteralColors`, `noReactNativeRawText`, and `useReactNativePlatformComponents`.
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/react-native"]
+}
+```
+
+---
+
+### `ignore`
+
+A standalone list of commonly ignored paths (build outputs, caches, editor folders, AI tool directories, generated files, etc.). Does not extend `base`.
+
+```jsonc
+// biome.json
+{
+  "extends": ["@nedcloarbr/biome-config/ignore"]
+}
+```
+
+You can combine it with any other config:
+
+```jsonc
+// biome.json
+{
+  "extends": [
+    "@nedcloarbr/biome-config/react",
+    "@nedcloarbr/biome-config/ignore"
+  ]
+}
+```

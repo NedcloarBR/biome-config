@@ -54,6 +54,7 @@
     "./ignore": "./ignore.json"
   },
   "files": [
+    "README.md",
     "base.json",
     "css.json",
     "html.json",
